@@ -1,0 +1,335 @@
+/*
+Theme Name: Mime-DAL customized
+Theme URI: http://cabfansub.com/
+Author: Cab Fansub
+Author URI: http://cabfansub.com/
+Description: A WordPress Template Inspired by Date A Live Official Site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: featured-images
+Template: mime-dal
+Text Domain: mime-dal-customized
+*/
+
+/* = Custom fonts (Eurocaps and Lato)
+---------------------------------------------------------*/
+@font-face {
+    font-family: 'Eurocaps';
+    src: url('materials/fonts/EUROCAPS.eot');
+    src: url('materials/fonts/EUROCAPS.eot?#iefix') format('embedded-opentype'),
+         url('materials/fonts/EUROCAPS.woff2') format('woff2'),
+         url('materials/fonts/EUROCAPS.woff') format('woff'),
+         url('materials/fonts/EUROCAPS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('materials/fonts/Lato-BoldItalic.eot');
+    src: url('materials/fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('materials/fonts/Lato-BoldItalic.woff2') format('woff2'),
+         url('materials/fonts/Lato-BoldItalic.woff') format('woff'),
+         url('materials/fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('materials/fonts/Lato-Bold.eot');
+    src: url('materials/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('materials/fonts/Lato-Bold.woff2') format('woff2'),
+         url('materials/fonts/Lato-Bold.woff') format('woff'),
+         url('materials/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('materials/fonts/Lato-Italic.eot');
+    src: url('materials/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+         url('materials/fonts/Lato-Italic.woff2') format('woff2'),
+         url('materials/fonts/Lato-Italic.woff') format('woff'),
+         url('materials/fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('materials/fonts/Lato-Regular.eot');
+    src: url('materials/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('materials/fonts/Lato-Regular.woff2') format('woff2'),
+         url('materials/fonts/Lato-Regular.woff') format('woff'),
+         url('materials/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Font configuration */
+/* Eurocaps exception */
+#site-title, .menu, .entry-title, .entry-sidebar, .entry-info {
+	font-family: 'Eurocaps', arial, sans-serif;
+}
+/* Everything else */
+body, #s, .no-results .entry-title, .comment-form-author input,
+.comment-form-email input, .comment-form-url input,
+.comment-form-location input, .comment-form-comment textarea {
+	font-family: 'Lato', verdana, arial, sans-serif;
+}
+/* Override WordPress default emoticon size */
+img.wp-smiley,
+img.emoji {
+	height: initial !important;
+	width: initial !important;
+	max-height: 6em !important;
+}
+
+body, a:hover, .noel-lock {
+	cursor: url("materials/cursor.png"), default;
+}
+
+#chibi-footer #mascot-running-middle {
+	background-repeat: no-repeat;
+	bottom: 0;
+	display: block;
+	height: 64px;
+	left: 390px;
+	position: absolute;
+	width: 260px;
+}
+
+#mascot-running-middle {
+	background-image: url("materials/chibi.gif");
+}
+
+#chibi-footer {
+	background-image: url("materials/japan-landscape.png");
+}
+
+#chibi-footer {
+	height: 177px;
+	margin: 0 auto;
+	position: relative;
+	width: 980px;
+}
+
+/* Replace Wordpress logo in header to favicon logo */
+#header .inner {
+	background: url('materials/header-logo.png') no-repeat right center;
+}
+
+#reply-title {
+	padding: 10px 20px 5px;
+}
+
+.form-submit {
+	border-top: 0;
+}
+
+.nav-newer, .nav-older {
+	font-weight: bold;
+}
+
+.wp-smiley-select {
+	max-height: 6em;
+}
+
+/* EXPERIMENTAL Layout change so that preview image is the same ratio with the image*/
+.blog-loop {
+	text-align: center;
+}
+
+.blog-loop img {
+	/* Dimension=256/180 */
+	height: 313px; /* Rounded */
+	width: 220px;
+}
+
+.blog-loop .entry-excerpt {
+	width: 204px;
+	margin: 90px 0 0;
+	padding: 40px 9px 0;
+}
+
+.blog-loop .entry-title {
+	width: 220px;
+}
+
+#main {
+	width: 1100px;
+}
+
+#content {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.entry-content {
+	width: 670px !important;
+}
+
+#comments-title {
+	color: #fafafa !important;
+	font-size: 1.5em !important;
+}
+
+iframe[src*="drive.google.com"], iframe.wp-embedded-content {
+	width: 100% !important;
+}
+
+/* ====================================
+          Unknown rules
+=======================================*/
+span.entry-terms.category {
+	display: none;
+}
+/* Custom login */
+.loginb {
+	background: 0;
+	background-color: #fff;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border-color: #1f3f80;
+	display: inline-block;
+	color: #5c5c5c;
+	font-size: 15px;
+	padding: 6px 20px 24px;
+}
+
+.tags {
+	padding: 10px 0 8px;
+	font-size: 11px;
+}
+
+.tags a {
+	padding: 0 5px;
+}
+
+.tags a {
+	color: #5c5c5c;
+}
+
+.tags a:hover {
+	color: #ccc;
+}
+
+.table {
+	border-top: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+}
+
+.table td {
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 8px;
+}
+
+ul#like_list {
+	display: none;
+}
+
+ul#like_list li {
+	position: relative;
+}
+
+ul#like_list li a.remove {
+	background: #FFF !important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #333 !important;
+	padding: 5px 10px;
+	border: none !important;
+}
+
+ul#like_list li a.remove:hover {
+	background-color: #eee !important;
+}
+
+ul li,#header .headerInfo li,.search-autocomplete li {
+	list-style: none;
+}
+
+ul li a,.list_movie li:hover .movieInfo,.search-item span,#watch_load:hover a,ul#like_list li a {
+	display: block;
+}
+
+#header .headerTop,.player {
+	position: relative;
+	z-index: 6;
+}
+
+#header .tabmenu li,#footer .ftxt,#register .registerrRight,.listep a {
+	float: left;
+}
+
+.imargin,.page_info,.appriseInner {
+	padding: 10px;
+}
+
+.userInfo p {
+	padding: 5px;
+}
+
+.center-wrap .carousel-pagination a:hover,.center-wrap .carousel-pagination a.active,.list_movie .movieInfo a._play:hover,.list_movie .movieInfo a._view:hover {
+	background-position: left bottom;
+}
+
+#register .birthday select[name=month],.userInfo p.birthday select[name=month] {
+	border-left: none;
+	border-right: none;
+}
+
+#popup_message,.zmain {
+	padding: 15px;
+}
+
+.plugin_limit .pl_contents p,.plugin_limit .pl_contents .px {
+	padding: 10px 30px;
+}
+
+.loginb:active,.registerb:active {
+	position: relative;
+	top: 1px;
+}
+
+.nav_1 .tab_pay_active,.nav_1 .tab_pay:hover,.nav_1 .active_clone {
+	background-position: 0 -32px;
+}
+
+.table tr:hover {
+	background: #f9f9f9;
+}
+
+.loading {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	position: fixed;
+	right: 0;
+	background: #000;
+	text-shadow: .1em .1em .2em black;
+	padding: 10px 15px;
+	opacity: .7;
+	color: #fff;
+	border-radius: 0 0 0 5px;
+	margin: 0 auto;
+}
+
+.comment {
+	font-size: 16px;
+}
+
+.comments-title .commenter-name {
+	font-weight: bold;
+}
+
+.comment-meta {
+	padding-top: 3px;
+	font-size: 13px;
+}
+

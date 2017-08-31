@@ -1,0 +1,70 @@
+# Copyright (C) 2015 Cab Fansub
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mime-DAL customized 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mime-dal-"
+"customized\n"
+"POT-Creation-Date: 2015-10-01 16:36+0700\n"
+"PO-Revision-Date: 2015-10-01 16:37+0700\n"
+"Last-Translator: Ho Tuan Kiet <tuankiet65@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: footer.php:24
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: functions.php:22
+msgid "Thumbnail"
+msgstr ""
+
+#: functions.php:42
+msgid "None"
+msgstr ""
+
+#: functions.php:89
+msgid "Category: "
+msgstr "Thể loại: "
+
+#: functions.php:91
+msgid "Tag: "
+msgstr "Thẻ: "
+
+#: functions.php:93
+msgid "Author: "
+msgstr "Tác giả: "
+
+#: functions.php:95
+msgid "Date archive: "
+msgstr "Các bài đăng vào: "
+
+#: functions.php:97
+msgid "Search result for: "
+msgstr "Kết quả tìm kiếm cho: "
+
+#: functions.php:99
+msgid "Page %s"
+msgstr "Trang %s"
+
+#. Theme Name of the plugin/theme
+msgid "Mime-DAL customized"
+msgstr "Mime-DAL customized"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://cabfansub.com/"
+msgstr "http://cabfansub.com/"
+
+#. Description of the plugin/theme
+msgid "A WordPress Template Inspired by Date A Live Official Site"
+msgstr "A WordPress Template Inspired by Date A Live Official Site"
+
+#. Author of the plugin/theme
+msgid "Cab Fansub"
+msgstr "Cab Fansub"
